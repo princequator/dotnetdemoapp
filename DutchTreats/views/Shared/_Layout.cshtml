@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="index.js"></script>
+    <title>App: @ViewBag.title</title>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Labrynths</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="App" asp-action="Index">HOme</a></li>
+                <li><a asp-controller="App" asp-action="Contact">Contact Us</a></li>
+                <li><a asp-controller="App" asp-action="About">About Us</a></li>                
+            </ul>
+        </menu>
+    
+    
+    </header>
+    <section>
+        @ViewBag.title
+        @RenderBody()
+    </section>
+    <footer>Copyright 2021</footer>
+</body>
+</html>

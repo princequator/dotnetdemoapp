@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.title = "HOme Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="index.js"></script>
+    <title>App: @ViewBag.title</title>
+
+</head>
+<body>
+    <h1>@ViewBag.title</h1>
+    @*<img src="~/3.jpg" />*@
+    <form onsubmit="submitMethod()">
+        <label>Username: </label>
+        <input id="uname" />
+        <br />
+        <label>Email ad: </label>
+        <input type="email" id="mail" />
+        <br />
+        <button>Submit</button>
+    </form>
+</body>
+</html>
